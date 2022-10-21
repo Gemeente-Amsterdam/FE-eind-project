@@ -6,6 +6,7 @@ body {
 h1 {
     width: 100%;
     text-align: center;
+    margin-top: 5%;
 }
 
 h2 {
@@ -19,6 +20,7 @@ header {
     background-color: white;
     position: sticky;
 	top: 0px;    
+    box-shadow: 0 0 5px rgba(0, 0, 0, 80%);
 }
 
 #logo {
@@ -42,62 +44,62 @@ header {
     font-weight: bold;
 }
 
-#grijzebalk {
+#grijzebalk, footer {
     background-color: rgb(235, 235, 235);
     height: 50px;
-    text-align: center;        
+    text-align: center;
+    padding: .5em;        
 }
 
 main {
     display: flex;
     background-color: white;
     flex-wrap: wrap;
-    width: 80%;
-    margin-left: 10%;
+    /* width: 80%;
+    margin: 0 0 15% 10%; */
     justify-content: center;   
-}
-
-article h3 {
-    display: flex;
-    background-color: rgb(219, 9, 9);
-    justify-content: center;
-    padding: 1em ;
-    margin-top: 0;
-    width: 84%;
-}
-
-article p{
-    display: flex;
-    margin-top: 10pt;
-    color: black;
-    background-color: white;
-    padding: 25% ;    
+    margin-bottom: 3em;
 }
 
 article {
     border-radius: 5px;
     background-color: white;
     color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0.5em 0.5em;
+    margin: 1em;
     box-shadow: -1px -4px 13px -1px grey ;
-    /* background-color: red; */
+    max-width: 20%; /* kan dit ook anders? */
+    
 }
 
 article img {
     width: 100%;
     height: auto;
-    /* background-color: red; */
 }
 
 article img:hover {
     border: 1px solid rgb(223, 9, 9);
     border-radius: 17px;
     cursor: pointer;
-    transform: scale(2.4); 
-    /* rotate(360deg); */
+    transform: scale(2); 
     transition-duration: 2s;   
-    /* transition: ease 1s all; */
+}
+
+article h3 {
+    text-align: center;
+    background-color: rgb(219, 9, 9);
+    padding: 1em ;
+    margin-top: -0.3em;
+}
+
+article p{
+    display: flex;
+    color: black;
+    background-color: white;
+    padding: 0 1em 1em;
+}
+
+@media only screen and (max-width: 500px) {
+    article {
+        max-width: 100%; /* kan dit ook anders? */
+    }
 }
