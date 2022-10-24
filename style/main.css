@@ -59,6 +59,7 @@ main {
     margin: 0 0 15% 10%; */
     justify-content: center;   
     margin-bottom: 3em;
+    padding: 2em;
 }
 
 article {
@@ -68,7 +69,6 @@ article {
     margin: 1em;
     box-shadow: -1px -4px 13px -1px grey ;
     max-width: 20%; /* kan dit ook anders? */
-    
 }
 
 article img {
@@ -98,8 +98,19 @@ article p{
     padding: 0 1em 1em;
 }
 
+.extra-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: -1em;
+}
+
 @media only screen and (max-width: 500px) {
     article {
         max-width: 100%; /* kan dit ook anders? */
+    }
+
+    article img:hover {
+        transform: scale(1.2); 
     }
 }
