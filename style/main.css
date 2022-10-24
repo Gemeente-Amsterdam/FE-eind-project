@@ -56,7 +56,7 @@ header {
     padding: .5em;        
 }
 
-main {
+.cards-row {
     display: flex;
     background-color: white;
     flex-wrap: wrap;
@@ -130,7 +130,29 @@ article p{
             Overzicht pagina
 ---------------------------------  */
 
+main.cards-row a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+
 
 /* ---------------------------------
             Detail pagina
 ---------------------------------  */
+.detail-page{
+    display: grid;
+    margin: 2em 5em;
+    grid-template-columns: repeat(2, 1fr);
+    max-height: 80vh;
+}
+
+.detail-page figure img{
+    width: 100%;
+}
+
+@media only screen and (max-width: 750px) {
+    .detail-page{
+        display: block;
+    }
+}
