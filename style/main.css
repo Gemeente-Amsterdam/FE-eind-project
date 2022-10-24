@@ -19,13 +19,39 @@ h2 {
 /* ---------------------------------
             Header and Navigation
 ---------------------------------  */
+
+
 header {
     display: flex;
-    height: 180px;
+    flex-wrap: wrap;
+    /* height: 180px; */
     background-color: white;
     position: sticky;
 	top: 0px;    
     box-shadow: 0 0 5px rgba(0, 0, 0, 80%);
+}
+
+#navbar {
+    display: flex;
+    list-style: none;
+    justify-content: left;
+    }
+#navbar li {
+    margin: 0 1em ;
+}
+#navbar li:last-child {
+    margin: 0 1em 0 auto;
+}
+
+#navbar li a,
+#navbar li a:link,
+#navbar li a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+#navbar li a:hover {
+    text-decoration: underline;
 }
 
 #logo {
@@ -51,7 +77,9 @@ header {
 
 #grijzebalk, footer {
     background-color: rgb(235, 235, 235);
+    margin-top: 1em;
     height: 50px;
+    width: 100%;
     text-align: center;
     padding: .5em;        
 }
