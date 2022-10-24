@@ -22,7 +22,54 @@
             </nav>
         </div>
     </header>
-    <!-- TODO: Contact pagina -->
-    <h1>Contact</h1>
+
+    <h1>Contact formulier</h1>
+
+
+  <div class="container">
+    <form>
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Voornaam</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Uw voornaam..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Achternaam</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Uw achternaam..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="afdeling">Afdeling</label>
+      </div>
+      <div class="col-75">
+        <select id="afdeling" name="afdeling">
+          <option value="venor">V&OR</option>
+          <option value="ingenieurburo">Ingenieurburo</option>
+          <option value="etc">ETC</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="onderwerp">Onderwerp</label>
+      </div>
+      <div class="col-75">
+        <textarea id="onderwerp" name="onderwerp" placeholder="Onderwerp omschrijving.." style="height:275px"></textarea>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+    </form>
+  </div>
 </body>
+
 </html>
