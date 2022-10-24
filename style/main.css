@@ -3,6 +3,7 @@
 ---------------------------------  */
 body {
     margin: 0;
+    font-size: 16px;
 }
 
 h1 {
@@ -14,6 +15,10 @@ h1 {
 h2 {
     width: 100%;
     text-align: center;
+}
+
+p {
+    font-size: 1rem;
 }
 
 /* ---------------------------------
@@ -94,8 +99,6 @@ main {
     flex-direction: column;
 }
 
-
-
 .explanation {
     max-width: 80vw;
     margin-bottom: 2em;
@@ -112,6 +115,10 @@ main {
     padding: 2em;
     /* left: 5vw;
     position: relative; */
+}
+
+.article-wrapper.extra{
+    margin-top: 5em;
 }
 
 .article-wrapper article a {
@@ -184,14 +191,50 @@ article p{
     background-color: rgb(219, 9, 9);
     padding: 1.5em;
     color: white;
-    margin-top: 2em;
+    margin: 1em 0 4em;
     text-decoration: inherit;
+}
+
+
+/* ---------------------------------
+            Detail pagina
+---------------------------------  */
+.detail-page{
+    display: grid;
+    margin: 2em 5em;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.detail-page figure img{
+    width: 100%;
+}
+
+@media only screen and (max-width: 750px) {
+    .detail-page{
+        display: block;
+    }
+}
+
+.art-content {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+.art-content p {
+    margin-top: 3em;
 }
 
 /* ------------------------------------------
          Contact formulier
 ---------------------------------------------*/
-input[type=text], select, textarea {
+
+form input,
+ textarea {
+    box-sizing: border-box;
+}
+
+form input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
     border: 0px solid #ccc;
@@ -200,23 +243,23 @@ input[type=text], select, textarea {
   }
   
   
-  input[type=text]:hover, select:hover, textarea:hover {
+  form input[type=text]:hover, select:hover, textarea:hover {
   
       border: 1px solid red;
   
   }
   
-  input[type=text]:focus, select:focus, textarea:focus {
+  form input[type=text]:focus, select:focus, textarea:focus {
   
       border: 3px solid red;
   }
   
-  label {
+  form label {
     padding: 12px 12px 12px 0;
     display: inline-block;
   }
   
-  input[type=submit] {
+  form input[type=submit] {
     background-color: rgb(219, 9, 9);
     color: white;
     padding: 12px 20px;
@@ -226,7 +269,7 @@ input[type=text], select, textarea {
     float: right;
   }
   
-  input[type=submit]:hover {
+  form input[type=submit]:hover {
     background-color: rgb(207, 13, 13);
   }
   
@@ -262,23 +305,3 @@ input[type=text], select, textarea {
       margin-top: 0;
     }
   }
-
-/* ---------------------------------
-            Detail pagina
----------------------------------  */
-.detail-page{
-    display: grid;
-    margin: 2em 5em;
-    grid-template-columns: repeat(2, 1fr);
-    max-height: 80vh;
-}
-
-.detail-page figure img{
-    width: 100%;
-}
-
-@media only screen and (max-width: 750px) {
-    .detail-page{
-        display: block;
-    }
-}
