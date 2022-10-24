@@ -40,7 +40,7 @@ header {
     margin: 0 1em ;
 }
 #navbar li:last-child {
-    margin: 0 1em 0 auto;
+    margin: 0 2em 0 auto;
 }
 
 #navbar li a,
@@ -84,7 +84,24 @@ header {
     padding: .5em;        
 }
 
-.cards-row {
+
+/* ---------------------------------
+            Cards
+---------------------------------  */
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.explanation {
+    max-width: 80vw;
+    margin-bottom: 2em;
+}
+
+.article-wrapper {
     display: flex;
     background-color: white;
     flex-wrap: wrap;
@@ -93,6 +110,13 @@ header {
     justify-content: center;   
     margin-bottom: 3em;
     padding: 2em;
+    /* left: 5vw;
+    position: relative; */
+}
+
+.article-wrapper article a {
+    color: inherit;
+    text-decoration: inherit;
 }
 
 article {
@@ -154,14 +178,21 @@ article p{
     }
 }
 
+.overzicht-btn {
+    width: 20%;
+    text-align: center;
+    background-color: rgb(219, 9, 9);
+    padding: 1.5em;
+    color: white;
+    margin-top: 2em;
+    text-decoration: inherit;
+}
+
 /* ---------------------------------
             Overzicht pagina
 ---------------------------------  */
 
-main.cards-row a {
-    color: inherit;
-    text-decoration: inherit;
-}
+
 
 
 
