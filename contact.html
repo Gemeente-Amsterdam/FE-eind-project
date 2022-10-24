@@ -1,66 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contact</title>
-        <link rel="stylesheet" href="./style/main.css">
-    </head>
-
-
-
-
-<body class="contact">
-    <!-- TODO: Contact pagina -->
-
-    <h2>Contact formulier</h2>
-
-
-<div class="container">
-  <form>
-  <div class="row">
-    <div class="col-25">
-      <label for="fname">Voornaam</label>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/main.css">
+    <title>Contact</title>
+</head>
+<body id="contact-page">
+  <header>
+    <div id="logo"><img src="andreas.svg"></div>
+    <div id="amsterdam">Gemeente Amsterdam</div>
+    <div id="grijzebalk">
+        <nav>
+            <ul id="navbar">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/overzicht-pagina.html">Schilderijen</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+                <li><input type="text" placeholder="Search.."></li>
+            </ul>
+        </nav>
     </div>
-    <div class="col-75">
-      <input type="text" id="fname" name="firstname" placeholder="Uw voornaam..">
+  </header>
+
+    <h1>Contact formulier</h1>
+
+
+  <div class="container">
+    <form>
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Voornaam</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Uw voornaam..">
+      </div>
     </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Achternaam</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Uw achternaam..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="afdeling">Afdeling</label>
+      </div>
+      <div class="col-75">
+        <select id="afdeling" name="afdeling">
+          <option value="venor">V&OR</option>
+          <option value="ingenieurburo">Ingenieurburo</option>
+          <option value="etc">ETC</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="onderwerp">Onderwerp</label>
+      </div>
+      <div class="col-75">
+        <textarea id="onderwerp" name="onderwerp" placeholder="Onderwerp omschrijving.." style="height:275px"></textarea>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+    </form>
   </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="lname">Achternaam</label>
-    </div>
-    <div class="col-75">
-      <input type="text" id="lname" name="lastname" placeholder="Uw achternaam..">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="afdeling">Afdeling</label>
-    </div>
-    <div class="col-75">
-      <select id="afdeling" name="afdeling">
-        <option value="venor">V&OR</option>
-        <option value="ingenieurburo">Ingenieurburo</option>
-        <option value="etc">ETC</option>
-      </select>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="onderwerp">Onderwerp</label>
-    </div>
-    <div class="col-75">
-      <textarea id="onderwerp" name="onderwerp" placeholder="Onderwerp omschrijving.." style="height:275px"></textarea>
-    </div>
-  </div>
-  <br>
-  <div class="row">
-    <input type="submit" value="Submit">
-  </div>
-  </form>
-</div>
 </body>
 
 </html>
