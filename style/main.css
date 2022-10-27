@@ -60,7 +60,6 @@ header {
     height: 50px;
     width: 100%;
     text-align: center;
-    padding: .5em;        
 }
 
 #navbar {
@@ -76,7 +75,6 @@ header {
 #navbar li:last-child {
     display: flex;
     margin: 0 1em 0 auto;
-    border: 1pt solid black;
 }
 
 #navbar li a,
